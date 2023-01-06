@@ -91,6 +91,7 @@
   letter-spacing: .2px;
   font-size: 18px;
   text-align: right;
+  text-shadow: 2px 2px 1px rgba(255,255,255, .5);
 }
 .contactInfo h3{
   margin: 0px;
