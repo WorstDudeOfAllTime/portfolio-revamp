@@ -1,0 +1,49 @@
+.navContainer{
+  height: 100%;
+  width: 32%;
+  color: black;
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+  transition: all .4s;
+}
+.navLink {
+  height: 100%;
+  width: 100%;
+  color: black;
+}
+.navContainer:hover{
+  cursor: pointer;
+  margin-top: -6px;
+  border-bottom: 3px solid black;
+}
+.pageNum{
+  font-family: 'Modern No. 20', sans-serif;
+  width: 50px;
+  border-bottom: 1px solid black;
+  margin: 0px;
+  height: 30px;
+}
+.title, .desc {
+  font-family: 'Goudy Old Style', sans-serif;                                  
+}
+.desc {
+  font-weight: 100; 
+  font-size: 15px;
+  text-align: center;
+}
+@keyframes fadeIn {
+  from {opacity: 0%};
+  to {opacity: 100%};
+}
+
+@media screen and (max-width: 600px) {
+  .pageNum{
+    font-size: 13px;
+  }
+  .title{
+    font-size: 14px;
+  }
+  .desc{
+    font-size: 12px;
+  }
+}

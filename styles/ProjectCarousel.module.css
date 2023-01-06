@@ -1,0 +1,43 @@
+.carouselContainer {
+  height: 100%;
+  width: 100%;
+}
+.buttonContainer {
+  display: flex;
+  height: 100%;
+  width: 15%;
+}
+.buttons {
+  background: black;
+  height: 5%;
+  width: 80%;
+  font-size: 1.2vw;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 2px 0px 3px rgba(0,0,0,.3);
+  transition: all ease-in-out .2s;
+  font-family: 'Goudy Old Style', sans-serif;
+}
+.buttons:hover{
+  background: transparent;
+  border: 2px solid black;
+  color: black;
+}
+.buttonLeft{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center
+}
+.buttonRight{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media screen and (max-width: 900px){
+  .buttons {
+    font-size: 14px;
+  }
+}

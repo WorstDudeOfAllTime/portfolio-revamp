@@ -1,0 +1,10 @@
+.portfolioContainer{
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    height: 100%;
+    width: 100%;
+  }
+  .portfolioDisplay{
+    height: 100%;
+    width: 100%;
+  }

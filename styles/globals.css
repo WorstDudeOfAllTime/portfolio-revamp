@@ -24,3 +24,28 @@ a {
     background: black;
   }
 }
+
+.flexCent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexCentCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@keyframes dropDown{
+  from {opacity: 0}
+  to {opacity: 1};
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
