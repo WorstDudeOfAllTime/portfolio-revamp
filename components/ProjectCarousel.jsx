@@ -10,7 +10,7 @@ const ProjectCarousel = () => {
   const projectList = [
     {
       projName: 'BadDates',
-      link: 'https://restaurant-redux.vercel.app/',
+      link: 'https://baddates.vercel.app/',
       image: badDates,
       description:
         'BadDates: an app to anonymously post your bad date stories. Built with Next.js and MongoDB.',
