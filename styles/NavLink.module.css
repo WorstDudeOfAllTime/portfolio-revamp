@@ -4,7 +4,7 @@
   color: black;
   animation-name: fadeIn;
   animation-duration: 1.5s;
-  transition: all .4s;
+  transition: all .2s;
 }
 .navLink {
   height: 100%;
