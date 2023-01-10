@@ -30,6 +30,7 @@
   color: black;
   font-size: 4.5rem;
   margin: 0px;
+  transition: all ease-in-out 0.5s;
 }
 .elipImage h2 {
   color: black;
@@ -42,6 +43,7 @@
   width: 100%;
   color: black;
   font-size: 15px;
+  padding: 10px 0px;
 }
 
 .contactInfo {
@@ -72,19 +74,19 @@
   margin-top: 20px;
 }
 .listItem {
-  transition: all ease-in-out 0.15s;
+  transition: all .1s ease-in-out;
 }
 .listItem:hover {
-  filter: invert(0.3);
-
-  filter: drop-shadow(0px -30px 0.5px rgb(211, 0, 0));
+  filter: drop-shadow(0px -30px 0.5px rgb(211, 0, 0)) blur(1px);
 }
 .bioContainer {
   height: auto;
-  width: 100%;
+  width: 99%;
   color: rgb(0, 0, 0);
   letter-spacing: 0.2px;
   text-align: center;
+  border-top: 1px solid black;
+  padding: 15px 0 0 0 ;
 }
 .bioContainer p {
   margin: 0px;
@@ -103,6 +105,11 @@
     opacity: 1;
   }
 }
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
 @media screen and (max-width: 650px) {
   .contactInfo {
     font-size: 13px;
@@ -115,7 +122,7 @@
   .elipImage h1 {
     font-size: 3.5em;
   }
-  .elipImage h2{
+  .elipImage h2 {
     font-size: 1em;
   }
 }
@@ -138,7 +145,7 @@
   .bioContainer {
     font-size: 11px;
   }
-  .socialBar{
+  .socialBar {
     width: 90%;
   }
 }

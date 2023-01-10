@@ -1,49 +1,56 @@
-.navContainer{
+.navContainer {
   height: 100%;
   width: 32%;
   color: black;
   animation-name: fadeIn;
   animation-duration: 1.5s;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 .navLink {
   height: 100%;
   width: 100%;
   color: black;
 }
-.navContainer:hover{
+.navContainer:hover {
   cursor: pointer;
   margin-top: -6px;
-  border-bottom: 3px solid black;
+  filter: drop-shadow(-2.5px -2.5px 0.5px rgb(211, 0, 0)) blur(1px)
+    drop-shadow(-5px -5px 3px rgb(211, 0, 0))
+    drop-shadow(-5px -5px 5px rgb(211, 0, 0));
 }
-.pageNum{
+.pageNum {
   font-family: 'Modern No. 20', sans-serif;
   width: 50px;
   border-bottom: 1px solid black;
   margin: 0px;
   height: 30px;
 }
-.title, .desc {
-  font-family: 'Goudy Old Style', sans-serif;                                  
+.title,
+.desc {
+  font-family: 'Goudy Old Style', sans-serif;
 }
 .desc {
-  font-weight: 100; 
+  font-weight: 100;
   font-size: 15px;
   text-align: center;
 }
 @keyframes fadeIn {
-  from {opacity: 0%};
-  to {opacity: 100%};
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 
 @media screen and (max-width: 600px) {
-  .pageNum{
+  .pageNum {
     font-size: 13px;
   }
-  .title{
+  .title {
     font-size: 14px;
   }
-  .desc{
+  .desc {
     font-size: 12px;
   }
 }
