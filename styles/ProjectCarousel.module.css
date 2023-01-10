@@ -8,12 +8,12 @@
   width: 15%;
 }
 .buttons {
-  background: black;
+  background-color: #e6e6e6;
   height: 5%;
   width: 80%;
   font-size: 1.2vw;
-  color: white;
-  border: none;
+  color: black;
+  border: 1px solid black;
   cursor: pointer;
   border-radius: 3px;
   box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.3);
@@ -22,11 +22,14 @@
 }
 .buttons:hover {
   background: transparent;
-  border: 2px solid black;
+  border: none;
   color: black;
+  box-shadow: none;
   filter: drop-shadow(-2.5px -2.5px 0.5px rgb(211, 0, 0)) blur(1px)
-    drop-shadow(-5px -5px 3px rgb(211, 0, 0))
-
+    drop-shadow(-5px -5px 1.5px rgb(211, 0, 0))
+    drop-shadow(-6px -6px 3px rgb(211, 0, 0))
+    drop-shadow(-7px -7px 6px rgb(211, 0, 0))
+    drop-shadow(-8px -8px 6px rgb(211, 0, 0));
 }
 .buttonLeft {
   display: flex;
