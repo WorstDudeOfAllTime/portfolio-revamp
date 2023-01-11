@@ -165,6 +165,7 @@ export default function Home() {
       <div className={`flexCent ${styles.imageBox}`}>
         <div className={`flexCent ${styles.picFrame}`}>
           <Image
+            priority={true}
             className={styles.mainImg}
             src={kb}
             style={{

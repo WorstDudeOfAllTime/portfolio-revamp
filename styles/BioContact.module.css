@@ -126,32 +126,7 @@
     filter: invert(0) blur(0px);
   }
 }
-@keyframes hueSpinnerTwo {
-  12.5% {
-    filter: hue-rotate(360deg);
-  }
-  25% {
-    filter: hue-rotate(315deg);
-  }
-  37.5% {
-    filter: hue-rotate(270deg);
-  }
-  50% {
-    filter: hue-rotate(225deg);
-  }
-  52.5% {
-    filter: hue-rotate(180deg);
-  }
-  75% {
-    filter: hue-rotate(135deg);
-  }
-  87.5% {
-    filter: hue-rotate(90deg);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-  }
-}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

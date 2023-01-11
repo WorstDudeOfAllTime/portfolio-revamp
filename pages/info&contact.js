@@ -5,7 +5,11 @@ const BioContact = () => {
   return (
     <div className={`flexCentCol ${styles.contactContainer}`}>
       <div className={`flexCent ${styles.contentSquareRow} `}>
-        <div className={`${styles.contentSquare} ${styles.imageBoxOne}`}></div>
+        <div
+          priority={true}
+          className={`${styles.contentSquare} ${styles.imageBoxOne}`}
+        ></div>
+
         <div
           className={`flexCentCol ${styles.contentSquare} ${styles.introBox}`}
         >
@@ -155,9 +159,9 @@ const BioContact = () => {
           </div>
         </div>
         <div
+          priority={true}
           className={`flexCent ${styles.contentSquare} ${styles.imageBoxTwo}`}
-        >
-        </div>
+        ></div>
       </div>
     </div>
   );
