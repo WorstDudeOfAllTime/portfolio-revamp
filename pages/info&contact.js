@@ -1,51 +1,14 @@
 import styles from './../styles/BioContact.module.css';
 import Image from 'next/image';
-import bioPic from './../components/img/bio.png';
 const BioContact = () => {
   const fillColor = 'rgb(0, 0, 0)';
   return (
-    <div className={`flexCent ${styles.contactContainer}`}>
-      <div className={`flexCentCol ${styles.outterColumn}`}>
+    <div className={`flexCentCol ${styles.contactContainer}`}>
+      <div className={`flexCent ${styles.contentSquareRow} `}>
+        <div className={`${styles.contentSquare} ${styles.imageBoxOne}`}></div>
         <div
-          className={`flexCentCol ${styles.contact}`}
-          style={{
-            'font-family': 'Goudy Old Style, sans-serif',
-            fontWeight: '800',
-          }}
+          className={`flexCentCol ${styles.contentSquare} ${styles.introBox}`}
         >
-          <div className={`${styles.contactInfo}`}>
-            <h3 className={styles.header}>Email:</h3>
-            <h3>Krisbert@krisbert.dev</h3>
-          </div>
-          <div className={`${styles.contactInfo}`}>
-            <h3 className={styles.header}>Phone:</h3>
-            <h3>267-253-5763</h3>
-          </div>
-        </div>
-        <div
-          className={styles.bioContainer}
-          style={{
-            'font-family': 'Goudy Old Style, sans-serif',
-            fontWeight: '800',
-          }}
-        >
-          <p>
-            Born and raised in Delaware County, I moved to the city of
-            Philadelphia to study Computer Science in 2010. I crashed and burned
-            and went on to work a ton of different jobs. Some I loved, some not
-            so much, and though I gained a ton of life experience, I never found
-            anything I was quite passionate about.
-            <br />
-            <br />I reapproached Web Development during the pandemic and was
-            hooked. After several months of studying full time I joined a
-            bootcamp. Now, roughly two years after starting I am working to make
-            a career out of it.
-          </p>
-        </div>
-      </div>
-
-      <div className={`flexCentCol ${styles.innerColumn}`}>
-        <div className={styles.elipImage}>
           <h1>I&apos;m Kris</h1>
           <h2
             style={{
@@ -150,6 +113,50 @@ const BioContact = () => {
               </li>
             </ul>
           </div>
+          <div
+            className={`flexCentCol ${styles.contact}`}
+            style={{
+              'font-family': 'Goudy Old Style, sans-serif',
+              fontWeight: '800',
+            }}
+          >
+            <div className={`${styles.contactInfo}`}>
+              <h3 className={styles.header}>Email:</h3>
+              <h3>Krisbert@krisbert.dev</h3>
+            </div>
+            <div className={`${styles.contactInfo}`}>
+              <h3 className={styles.header}>Phone:</h3>
+              <h3>267-253-5763</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={`flexCent ${styles.contentSquareRow}`}>
+        <div className={`flexCent ${styles.contentSquare} ${styles.bioBox}`}>
+          <div
+            className={styles.biography}
+            style={{
+              'font-family': 'Goudy Old Style, sans-serif',
+              fontWeight: '800',
+            }}
+          >
+            <p>
+              Born and raised in Delaware County, I moved to the city of
+              Philadelphia to study Computer Science in 2010. I crashed and
+              burned and went on to work a ton of different jobs. Some I loved,
+              some not so much, and though I gained a ton of life experience, I
+              never found anything I was quite passionate about.
+              <br />
+              <br />I reapproached Web Development during the pandemic and was
+              hooked. After several months of studying full time I joined a
+              bootcamp. Now, roughly two years after starting I am working to
+              make a career out of it.
+            </p>
+          </div>
+        </div>
+        <div
+          className={`flexCent ${styles.contentSquare} ${styles.imageBoxTwo}`}
+        >
         </div>
       </div>
     </div>
@@ -157,23 +164,3 @@ const BioContact = () => {
 };
 
 export default BioContact;
-
-<div className={`$flexCentCol ${styles.picAndSoc}`}>
-  <Image
-    src={bioPic}
-    style={{ height: '60vh', width: 'auto', margin: '0' }}
-    className={styles.myPic}
-  />
-</div>;
-/**
- * <div className={`flexCentCol ${styles.nameAndPhoto}`}>
-        
-        <div className={styles.bio}>
-          <p style={{
-            'font-family': 'Goudy Old Style, sans-serif',
-            fontWeight: '800',
-          }}>
-          </p>
-        </div>
-      </div>
- */
