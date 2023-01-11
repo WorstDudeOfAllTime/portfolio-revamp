@@ -20,7 +20,7 @@
   background-size: cover;
   transition: all ease-in-out 0.4s;
   animation-name: hueSpinnerOne;
-  animation-duration: 4s;
+  animation-duration: 2s;
   border-bottom: 3px solid black;
   border-right: 3px solid black;
 }
@@ -31,7 +31,7 @@
   background-size: cover;
   transition: all ease-in-out 0.4s;
   animation-name: hueSpinnerOne;
-  animation-duration: 4s;
+  animation-duration: 2s;
   border-top: 3px solid black;
   border-left: 3px solid black;
 }
