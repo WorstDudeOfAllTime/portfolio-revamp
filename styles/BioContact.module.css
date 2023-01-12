@@ -14,8 +14,8 @@
   padding: 10px;
 }
 .imageBoxOne {
-  background-image: url(./../components/img/mechoice2.JPG);
-  background-position: center;
+  background-image: url(./../components/img/IMG_3378.jpg);
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   transition: all ease-in-out 0.4s;

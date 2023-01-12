@@ -1,8 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
-import kb from './../components/img/kb.png';
-
 export default function Home() {
   const fillColor = 'black';
   return (
@@ -164,19 +162,28 @@ export default function Home() {
 
       <div className={`flexCent ${styles.imageBox}`}>
         <div className={`flexCent ${styles.picFrame}`}>
-          <Image
+          <div
             priority={true}
             className={styles.mainImg}
-            src={kb}
             style={{
-              height: 'auto',
-              width: '96.5%',
-              borderTop: '3px solid black',
-              borderBottom: '3px solid black',
+              borderTop: '4px solid black',
+              borderBottom: '4px solid black',
               borderLeft: '7px solid black',
+            }}
+          ></div>{' '}
+          <div
+            priority={true}
+            className={styles.mainImgTwo}
+          ></div>
+          <div
+            priority={true}
+            className={styles.mainImg}
+            style={{
+              borderTop: '4px solid black',
+              borderBottom: '4px solid black',
               borderRight: '7px solid black',
             }}
-          ></Image>
+          ></div>
         </div>
       </div>
     </div>
