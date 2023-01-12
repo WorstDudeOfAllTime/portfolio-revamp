@@ -60,9 +60,9 @@
 }
 .mainImg {
   transition: all ease-in-out 0.2s;
-  filter: grayscale(0.9);
+  filter: grayscale(0.9) blur(2px);
   background-image: url('./../components/img/mechoice2.JPG');
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   height: 100%;
   width: 50%;
@@ -70,7 +70,7 @@
 .mainImgTwo {
   position: absolute;
   background-image: url('./../components/img/mechoice2.JPG');
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   height: 100%;
   width: 50%;
